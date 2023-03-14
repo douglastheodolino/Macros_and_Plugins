@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.7.0/MA.xsd" major_vers="3" minor_vers="7" stream_vers="0">
+	<Info datetime="2020-04-08T14:33:38" showfile="clone-unclone test" />
+	<Macro index="0" name="Clone Preset">
+		<Macroline index="0">
+			<text>Store Group &quot;CloneFromGroup999&quot; /o /nc</text>
+		</Macroline>
+		<Macroline index="1" delay="-1">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>Store Group &quot;CloneToGroup999&quot; /o /nc</text>
+		</Macroline>
+		<Macroline index="3">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="4">
+			<text>Clone Group &quot;CloneFromGroup999&quot; At &quot;CloneToGroup999&quot; If Preset *.* /lm /nc</text>
+		</Macroline>
+		<Macroline index="5">
+			<text>Delete Group &quot;CloneFromGroup999&quot; + &quot;CloneToGroup999&quot;</text>
+		</Macroline>
+		<Macroline index="6">
+			<text>(Clone Completo!)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="1" name="Clone All">
+		<Macroline index="0">
+			<text>Store Group &quot;CloneFromGroup999&quot; /o /nc</text>
+		</Macroline>
+		<Macroline index="1" delay="-1">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>Store Group &quot;CloneToGroup999&quot; /o /nc</text>
+		</Macroline>
+		<Macroline index="3">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="4">
+			<text>Lock Layout 1 Thru</text>
+		</Macroline>
+		<Macroline index="5">
+			<text>Lock Group 1 Thru - Group &quot;CloneFromGroup999&quot; - Group &quot;CloneToGroup999&quot;</text>
+		</Macroline>
+		<Macroline index="6">
+			<text>Clone Group &quot;CloneFromGroup999&quot; At &quot;CloneToGroup999&quot; /o /nc</text>
+		</Macroline>
+		<Macroline index="7">
+			<text>Unlock Layout 1 Thru</text>
+		</Macroline>
+		<Macroline index="8">
+			<text>Unlock Group 1 Thru</text>
+		</Macroline>
+		<Macroline index="9">
+			<text>Delete Group &quot;CloneFromGroup999&quot; + &quot;CloneToGroup999&quot;</text>
+		</Macroline>
+		<Macroline index="10">
+			<text>(Clone Completo!)</text>
+		</Macroline>
+	</Macro>
+</MA>

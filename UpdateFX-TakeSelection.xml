@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.7.0/MA.xsd" major_vers="3" minor_vers="7" stream_vers="0">
+	<Info datetime="2020-03-20T00:12:18" showfile="takeselectiontutorial" />
+	<Macro index="0" name="UpdateFX">
+		<Macroline index="0">
+			<text>SetVar $EffectUpdate = (&quot;Qual o Efeito&quot;?)</text>
+		</Macroline>
+		<Macroline index="1">
+			<text>SetVar $GroupUpdate = (Qual o Grupo? NUMERO!!)</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="3">
+			<text>Group $GroupUpdate</text>
+		</Macroline>
+		<Macroline index="4">
+			<text>Store Effect 1.$EffectUpdate.* /o</text>
+		</Macroline>
+		<Macroline index="5">
+			<text>Clear</text>
+		</Macroline>
+	</Macro>
+	<Macro index="1" name="UpdateFX Exemplo">
+		<Macroline index="0">
+			<text>Clear</text>
+		</Macroline>
+		<Macroline index="1">
+			<text>Group 1</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>Store Effect 1.1.* /o</text>
+		</Macroline>
+		<Macroline index="3">
+			<text>Clear</text>
+		</Macroline>
+	</Macro>
+</MA>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.8.0/MA.xsd" major_vers="3" minor_vers="8" stream_vers="0">
+	<Info datetime="2020-04-13T14:06:41" showfile="live effects 2.0" />
+	<Macro index="180" name="Mudar Efeito Ativo">
+		<Macroline index="0">
+			<text>SetVar $FXAtivo = (Efeito Ativo? NUMERO!)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="181" name="Groups">
+		<Macroline index="0">
+			<text>Assign Effect 1.$FXAtivo.* /Groups = (Groups?)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="182" name="Blocks">
+		<Macroline index="0">
+			<text>Assign Effect 1.$FXAtivo.* /Blocks = (Blocks?)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="183" name="Wings">
+		<Macroline index="0">
+			<text>Assign Effect 1.$FXAtivo.* /Wings = (Wings?)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="184" name="Width">
+		<Macroline index="0">
+			<text>Assign Effect 1.$FXAtivo.* /Width = (Width?)</text>
+		</Macroline>
+	</Macro>
+	<Macro index="185" name="Phase">
+		<Macroline index="0">
+			<text>SetVar $PhaseIn = (&quot;Phase Inicial?&quot;)</text>
+		</Macroline>
+		<Macroline index="1">
+			<text>SetVar $PhaseFin = (&quot;Phase Final?&quot;)</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>SetVar $Phase = $PhaseIn; AddVar $Phase = &quot;..&quot;; AddVar $Phase = $PhaseFin</text>
+		</Macroline>
+		<Macroline index="3">
+			<text>Assign Effect 1.$FXAtivo.* /Phase = $PhaseAssign</text>
+		</Macroline>
+	</Macro>
+	<Macro index="186" name="Form">
+		<Macroline index="0">
+			<text>Assign Form (FORMA?) At Effect 1.$FXAtivo.*</text>
+		</Macroline>
+	</Macro>
+</MA>

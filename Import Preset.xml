@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.7.0/MA.xsd" major_vers="3" minor_vers="7" stream_vers="0">
+	<Info datetime="2020-03-19T01:36:38" showfile="import-export tutorial" />
+	<Macro index="1" name="Import Preset">
+		<Macroline index="0">
+			<text>SelectDrive (Interno=1 / USB1=4)</text>
+		</Macroline>
+		<Macroline index="1">
+			<text>SetVar $ArquivoImport = (&quot;Nome do Arquivo?&quot;)</text>
+		</Macroline>
+		<Macroline index="2">
+			<text>Import $&quot;ArquivoImport&quot; @</text>
+		</Macroline>
+	</Macro>
+</MA>
